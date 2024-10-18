@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var Logger_1 = require("./Logger");
+var nuevoLogger = Logger_1.Logger.getInstancia();
+console.log(nuevoLogger);
+var segundoLogger = Logger_1.Logger.getInstancia();
+console.log(segundoLogger);
+nuevoLogger.resgistroMensajes("Este es mi primer mensaje");
+console.log(nuevoLogger);
+nuevoLogger.resgistroMensajes("Este es mi segundo mensaje");
+console.log(nuevoLogger);
+nuevoLogger.resgistroMensajes("Este es mi tercer mensaje");
+console.log(nuevoLogger);
